@@ -1,3 +1,5 @@
-# Spring Ignite Demo
+# Library Exploration
 
-Simple application, demonstrating the use of [Gluon Ignite](https://github.com/gluonhq/ignite) with SpringBoot.
+### Description
+JavaFX Desktop application, using with Spring Boot framework with the support of [Gluon Ignite](https://github.com/gluonhq/ignite)
+
