@@ -1,0 +1,6 @@
+bookId,name,imageSrc,author,rating,dateadded
+1,A DAO,images/a-dao-mot-khao-cuu-ve-lich-su-va-he-am-luat.jpg,Bui Trong Hien,4.5,null
+2,Murder on the orient express,images/an-mang-tren-chuyen-tau-phuong-dong.jpg,Agatha Christie,4,null
+3,Healing Your Lost Inner Child,images/chua-lanh-dua-tre-ton-thuong.jpeg,Robert Jackman,4.8,null
+4,The Suspicious of Mr Whicher,images/tu-dien-nhung-noi-so-hai-va-cuong-loan.png,Kate Summerscale,3.8,null
+5,And Then There Were None,images/va-roi-chang-con-ai.jpg,Agatha Christie,3,null

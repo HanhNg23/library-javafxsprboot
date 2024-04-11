@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="box" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="160.0" prefWidth="335.0" spacing="25.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.library.CardController">
+   <children>
+      <ImageView fx:id="bookImage" fitHeight="125.0" fitWidth="108.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/chua-lanh-dua-tre-ton-thuong.jpeg" />
+         </image>
+         <effect>
+            <DropShadow height="16.57" radius="8.1425" width="18.0" />
+         </effect>
+         <HBox.margin>
+            <Insets bottom="20.0" left="20.0" top="20.0" />
+         </HBox.margin>
+      </ImageView>
+      <VBox alignment="CENTER_LEFT" prefHeight="159.0" prefWidth="251.0" HBox.hgrow="ALWAYS">
+         <children>
+            <Label fx:id="bookId" text="1">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font></Label>
+            <Label fx:id="bookName" prefHeight="36.0" prefWidth="212.0" text="Lost Library" wrapText="true">
+               <font>
+                  <Font name="Arial Bold" size="24.0" />
+               </font>
+               <effect>
+                  <DropShadow blurType="ONE_PASS_BOX" height="0.0" radius="1.6974999999999998" spread="0.02" width="8.79">
+                     <color>
+                        <Color red="0.8600000143051147" green="0.8409366607666016" blue="0.6966000199317932" opacity="0.7535114288330078" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Label>
+            <Label fx:id="authorName" prefHeight="30.0" prefWidth="212.0" text="Rebecca Stead" wrapText="true">
+               <font>
+                  <Font name="Arial" size="17.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER_LEFT" prefHeight="52.0" prefWidth="212.0" spacing="10.0">
+               <children>
+                  <Label prefHeight="25.0" prefWidth="56.0" text="Rating:">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="rating" prefHeight="38.0" prefWidth="30.0" text="4/5" textFill="#dab025">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/icons8-star-filled-24.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+   <effect>
+      <Lighting diffuseConstant="1.49" light="$null" specularConstant="0.0" specularExponent="6.67">
+         <bumpInput>
+            <Shadow />
+         </bumpInput>
+      </Lighting>
+   </effect>
+</HBox>
