@@ -32,11 +32,12 @@ public class BookService {
 		ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
 			
 		try (
-				FileInputStream in = new FileInputStream(PathConstants.BOOK_DATA_CSV); 
+				//FileInputStream in = new FileInputStream(PathConstants.BOOK_DATA_CSV); 
 				//classLoader.getResourceAsStream(PathConstants.BOOK_DATA_CSV);
-				
-				//Stream<String> lines = new BufferedReader(new InputStreamReader(in, StandardCharsets.UTF_8)).lines();
-				Stream<String> lines = new BufferedReader(new FileReader(PathConstants.BOOK_DATA_CSV)).lines()
+		        InputStream inputStream = getClass().getClassLoader().getResourceAsStream("bookdata.csv");
+
+				Stream<String> lines = new BufferedReader(new InputStreamReader(inputStream)).lines()
+				//Stream<String> lines = new BufferedReader(new FileReader("bookdata.csv")).lines()
 				) {
 			
 				List<Book> books = lines.skip(1).map(line -> {
